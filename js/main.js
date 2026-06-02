@@ -280,13 +280,14 @@ gsap.utils.toArray(".project-card").forEach((card, i) => {
   });
 });
 
-ScrollTrigger.config({
-  ignoreMobileResize: true
-});
+// ScrollTrigger.config({
+//   ignoreMobileResize: true
+// });
 
-gsap.defaults({
-  overwrite: "auto"
-});
+// gsap.defaults({
+//   overwrite: "auto"
+// });
+
 /*Services*/
 
 gsap.registerPlugin(ScrollTrigger);
@@ -311,8 +312,8 @@ gsap.utils.toArray(".service-card").forEach((card, i) => {
 
 gsap.to(".team-floating img", {
   y: -15,
-  rotation: 6,
-  duration: 2,
+  rotation: 5,
+  duration: 1.5,
   yoyo: true,
   repeat: -1,
   ease: "sine.inOut",
