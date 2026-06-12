@@ -24,6 +24,10 @@
   --accent: #ff6a3d;
   --border: rgba(255, 255, 255, 0.08);
   --contact: rgba(170, 170, 170, 0.082);
+  --primary-glow: rgba(99, 102, 241, 0.5);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-dim: rgba(255, 255, 255, 0.6);
 }
 
 body.dark {
@@ -729,7 +733,7 @@ body.dark .blob {
 }
 
 .project-content {
-  padding: 10px;
+  padding: 15px;
 }
 
 .tag {
@@ -756,6 +760,13 @@ body.dark .blob {
   font-weight: 400;
 }
 
+.project-content a{
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+}
 /* MODAL */
 .project-modal {
   position: fixed;
@@ -784,6 +795,17 @@ body.dark .blob {
   right: 30px;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .project-content h3 {
+    font-size: 18px;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+  
 }
 
 /*Service */
@@ -999,6 +1021,7 @@ body.dark .blob {
   color: rgb(255, 157, 0);
   font-size: 20px;
   padding-top: 5px;
+  font-weight: 500;
 }
 
 .team-card h4 a:hover {
