@@ -1228,13 +1228,16 @@ body.dark .blob {
 /* Footer */
 
 .footer {
-  background: linear-gradient(180deg, #0a0f2c, #1a237e);
+  /* background: linear-gradient(180deg, #000000, #0b168e); */
+  background: transparent;
   color: white;
   position: relative;
   overflow: hidden;
   /* border-top: 1px solid rgb(58, 58, 58); */
   box-shadow: 0px 0px 100px #1a237e;
+  clip-path: ellipse(80% 100% at 50% 100%);
 }
+
 
 /* Slanted top */
 .footer::before {
